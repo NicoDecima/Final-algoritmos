@@ -1,0 +1,70 @@
+.experience__content {
+    place-items: center;
+    padding: 2em;
+}
+
+.exp__columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.exp__column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.exp__heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--first-color);
+    font-weight: var(--weight-700);
+}
+
+.exp__card {
+    background-color: var(--container-color);
+    border-top: 0.5px solid var(--border-color);
+    border-left: 0.5px solid var(--border-color);
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .5);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    text-align: left;
+}
+
+.exp__period {
+    font-size: .85rem;
+    color: var(--first-color);
+    margin-bottom: .25rem;
+}
+
+.exp__title {
+    color: var(--title-color);
+    font-weight: var(--weight-700);
+}
+
+.exp__place {
+    margin-bottom: .75rem;
+}
+
+.exp__detail {
+    font-style: italic;
+}
+
+.exp__tasks {
+    list-style: disc;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+}
+
+@media screen and (min-width: 900px) {
+    .exp__columns {
+        grid-template-columns: 1.3fr 1fr;
+        align-items: start;
+    }
+}
